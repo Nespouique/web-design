@@ -1,0 +1,109 @@
+canvas {
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+	div img{
+	width:100%
+}
+	#main{
+		padding-top:80px
+	}
+	#main>div{
+		background-color:#C2C2C2;
+	}
+	#main>div>h1 {
+		color:lightgreen;
+		 text-align:center
+	}
+	.description-pokemon {
+		background-color:#C2C2C2;
+	}
+	.type{
+		border-radius:5px;	
+	}
+	.plante{
+		background-color:#9BCC50;
+	}
+	.poison{
+		background-color:#B97FC9;
+	}
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;	
+      animation-duration: 1s;	
+      -webkit-animation-duration: 1s;
+      visibility: visible;			
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }	
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+    
+.flex-container {
+    height: 100%;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-item {
+	color:#ffffff; 
+	border-radius:5px;
+	text-align:center;
+    padding-right: 5px; 
+	padding-left: 5px;
+	width: 40%;
+	margin: 5px;
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 3em;
+	text-indent: 5px;
+	font-family: Roboto;
+}
+
+h1{
+	font-size: 5em;
+	font-family: Roboto;
+	color: #FFFFFF;
+}
+
+.navbar-inverse {
+  background-color: #d5c5c;
+  border-color: #d5c5c;
+}
