@@ -1,87 +1,145 @@
-.information{
-			background-color:darkblue;
-			border-radius:15px
-	}
-	.img-container{
+.navbar-inverse {
+  background-color: #d5c5c;
+  border-color: #d5c5c;
+}
+
+.main{
+		padding-top:80px;
+}
+	
+.bandeau{
+		background-color:#C2C2C2;
+}
+	
+h1 {
+		font-size: 5em;
+		font-family: Roboto;
+		color:#CD5C5C;
+		text-align:center
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 3em;
+	text-indent: 5px;
+	font-family: Roboto;
+}
+
+h4 {
+		text-align:center;
+}
+
+.type{
+		border-radius:5px;
+		color:#ffffff; 		
+		padding-right: 5px; 
+		padding-left: 5px;
+}
+
+.plante{
+		background-color:#9BCC50;
+}
+	
+.poison{
+		background-color:#B97FC9;
+}
+	
+.description-pokemon {
+		background-color:#C2C2C2;
+}
+
+.informations-pokemon{
+		background-color:#cd5c5c;
+		border-radius:10px;
+}
+
+.taille{
+	padding-right: 0px; 
+	padding-left: 0px;	
+	background: #444444;
+}
+
+.poids{
+	padding-right: 0px; 
+	padding-left: 0px;	
+	background: #444444;
+}
+
+.enonce{
+		color: #FFFFFF;
+		background: #000000;
+}
+
+.donnee{
+		color: #000000;
+		background: #FFFFFF;
+}
+
+.avis{
+	background-color:#D0A6A6;
+	height:30em;
+}
+	
+.avis p{
+	color: #FFFFFF;
+}
+	
+.avis blockquote footer{
+	color:#000000;	
+}
+	
+.kiviat{
+	height:30em;
+	background-color:#FFFFFF;
+}
+    
+.flex-container {
+    height: 100%;
+    padding: 5px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-item {
+	border-radius:5px;
+	text-align:center;    
+	width: 40%;
+	margin: 5px;
+}
+
+.evol-container{
+	background-color:#EEE;
+}
+
+.img-circle-container{
 		background-color:#888888;
 		 border-color:#FFFFFF;
 		  border-width:7px; 
 		  border-style:solid; 
 		  border-radius:50%	
 	}
-	.img-container ~ h4 {
-		text-align:center;
-	}
-	.characteristique{
-		background-color:#FFFFFF;
-	}
-	.addendum{
-		background-color:#97C2D7;
-		height:30em;
-	}
-	.thumbnails-container{
-			background-color:#EEE;
-	}
-	.addendum h1,
-	.Addendum p{
-			
-	}
-	.addendum footer{
-		color:#000000;	
-	}
-	.canvas-container{
-	height:30em;	
+	
+.img-circle-container img{
+	width:100%;
+}	
+
+
+/*ANIMATIONS*/
+
+.slideanim {
+	visibility:hidden;
 }
-canvas {
-        -moz-user-select: none;
-        -webkit-user-select: none;
-        -ms-user-select: none;
-    }
-	div img{
-	width:100%
-}
-	#main{
-		padding-top:80px
-	}
-	#main>div{
-		background-color:#C2C2C2;
-	}
-	#main>div>h1 {
-		font-size: 5em;
-		font-family: Roboto;
-		color:#CD5C5C;
-		text-align:center
-	}
-	.description-pokemon {
-		background-color:#C2C2C2;
-	}
-	.informations-pokemon{
-		background-color:#cd5c5c;
-		border-radius:10px;
-	}
-	.enonce{
-		color: #FFFFFF;
-	}
-	.donnee{
-		color: #000000;
-	}
-	.type{
-		border-radius:5px;	
-	}
-	.plante{
-		background-color:#9BCC50;
-	}
-	.poison{
-		background-color:#B97FC9;
-	}
-.slideanim {visibility:hidden;}
-  .slide {
+
+ .slide {
       animation-name: slide;
       -webkit-animation-name: slide;	
       animation-duration: 1s;	
       -webkit-animation-duration: 1s;
       visibility: visible;			
-  }
+ }
+ 
   @keyframes slide {
     0% {
       opacity: 0;
@@ -102,57 +160,3 @@ canvas {
       -webkit-transform: translateY(0%);
     }
   }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
-    }
-    .btn-lg {
-        width: 100%;
-        margin-bottom: 35px;
-    }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-        font-size: 150px;
-    }
-  }
-    
-.flex-container {
-    height: 100%;
-    padding: 5px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.flex-item {
-	color:#ffffff; 
-	border-radius:5px;
-	text-align:center;
-    padding-right: 5px; 
-	padding-left: 5px;
-	width: 40%;
-	margin: 5px;
-}
-
-.taille{
-	padding-right: 0px; 
-	padding-left: 0px;
-}
-.poids{
-	padding-right: 0px; 
-	padding-left: 0px;
-}
-
-h2{
-	text-transform: uppercase;
-	font-size: 3em;
-	text-indent: 5px;
-	font-family: Roboto;
-}
-
-.navbar-inverse {
-  background-color: #d5c5c;
-  border-color: #d5c5c;
-}

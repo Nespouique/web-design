@@ -2,20 +2,19 @@
 <html>
 <!-- MEMO: update me with `git checkout gh-pages && git merge master && git push origin gh-pages` -->
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>Pokédex</title>
-
-<!-- Material Design fonts -->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-
-<!-- Bootstrap Material Design -->
-<link href="css/bootstrap.css" rel="stylesheet">
-
-<!--Custom contents-->
-<link href="css/pokemon.css" rel="stylesheet">
-<link href="css/custom-nav.css" rel="stylesheet">
-
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pokédex</title>
+    
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+    
+    <!-- Bootstrap Material Design -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <!--Custom contents-->
+    <link href="css/pokemon.css" rel="stylesheet">
+    <link href="css/custom-nav.css" rel="stylesheet">
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="0">
@@ -33,24 +32,20 @@
             <li><a href="javascript:void(0)">Nom</a></li>
             <li><a href="javascript:void(0)">Type</a></li>
             <li><a href="javascript:void(0)">Statistiques</a></li>
-            <li class="divider"></li>
-            <li class="dropdown-header">Dropdown header</li>
-            <li><a href="#">Separated link</a></li>
-            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
       <form class="navbar-form navbar-left">
-        <div class="form-group" style="width:300px;">
-          <input type="text" class="form-control col-md-8" placeholder="Pikachu, Bulbizarre, ...">
+        <div class="form-group">
+          <input type="text" class="form-control col-md-8" placeholder="Pikachu, Bulbizarre, ..." style="width:30vw;">
         </div>
       </form>
       </div>
   </div>
 </div>
 
-<div id="main" class="container" role="main">
-  <div class="container">
+<div class="container-fluid main">
+  <div class="container bandeau">
     <h1>Bulbizarre</h1>
       <div class="row">        
         <div class="col-sm-6"> 
@@ -69,7 +64,7 @@
             	</p>
           	</div>
             
-            <div class="flex-container informations-pokemon slideanim">
+            <div class="flex-container informations-pokemon slide">
             	<div class="flex-item flex-container taille">
                 	<div class="flex-item enonce">Taille</div>
                     <div class="flex-item donnee">0,7m</div>
@@ -84,25 +79,26 @@
         </div>        
       </div>
     
-    <div class="row characteristique">
-      <div class="container col-sm-6 addendum">
-        <h1>Avis de l'expert</h1>
+    <div class="row">
+      <div class="container col-sm-6 avis">
+        <h2>Avis de l'expert</h2>
 		<blockquote>
           <p>Pokemon en cours de germination parfait pour decorer les balcons ainsi que les jardin.<br>
-          grande possibilité de devenir une fleur, égayant ainsi vos journées... </p>
+          Grande possibilité de devenir une fleur, égayant ainsi vos journées... </p>
           <footer>Professeur Kultouh  <cite title="Source Title">Les Pokemon, ou le braconnage du XXI siecle</cite></footer>
         </blockquote>
       </div>
-      <div class="col-sm-6 canvas-container" >
-        <canvas class="slideanim" id="canvas"></canvas>
+      
+      <div class="col-sm-6 kiviat" >
+        <canvas class="slide" id="canvas"></canvas>
       </div>
     </div>
     
-  <div class="row thumbnails-container">
-      <h1>Evolutions</h1>
+  <div class="row evol-container">
+      <h2>Évolutions</h2>
       <div class="container col-sm-4">
       <a href="#">
-      		<div class="img-container slideanim"> 
+      		<div class="img-circle-container slide"> 
             	<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"/>
             </div>
       		<h4>Bulbizarre #001</h4>
@@ -115,7 +111,7 @@
       </div>
       
       <a href="#" class="container col-sm-4">
-      		<div class="img-container slideanim"> 
+      		<div class="img-circle-container slide"> 
             	<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"/>
             </div>
             <h4>Herbizarre #002</h4>
@@ -126,7 +122,7 @@
       </a>
       
       <a href="#" class="container col-sm-4">
-      		<div class="img-container slideanim"> 
+      		<div class="img-circle-container slide"> 
             	<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"/>
             </div>
         	<h4>Florizarre #003</h4>
@@ -134,7 +130,9 @@
             	<div class="flex-item type plante" >Plante</div>
             </div>
       </a>
-      
+</div>
+</div>
+</div>      
 </body>
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.js"></script>
