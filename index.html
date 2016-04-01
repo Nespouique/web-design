@@ -69,7 +69,7 @@
             	</p>
           	</div>
             
-            <div class="flex-container informations-pokemon">
+            <div class="flex-container informations-pokemon slideanim">
             	<div class="flex-item flex-container taille">
                 	<div class="flex-item enonce">Taille</div>
                     <div class="flex-item donnee">0,7m</div>
@@ -84,35 +84,41 @@
         </div>        
       </div>
     
-    <div class="row">
-      <div class="col-sm-6" style="height:30em">
-        <canvas id="canvas"></canvas>
-      </div>
-      <div class="container col-sm-5">
-        <h2>Avis de l'expert</h2>
-        <p>Pokemon en cours de germination parfait pour decorer les balcons ainsi que les jardin.<br>
+    <div class="row characteristique">
+      <div class="container col-sm-6 addendum">
+        <h1>Avis de l'expert</h1>
+		<blockquote>
+          <p>Pokemon en cours de germination parfait pour decorer les balcons ainsi que les jardin.<br>
           grande possibilité de devenir une fleur, égayant ainsi vos journées... </p>
+          <footer>Professeur Kultouh  <cite title="Source Title">Les Pokemon, ou le braconnage du XXI siecle</cite></footer>
+        </blockquote>
+      </div>
+      <div class="col-sm-6 canvas-container" >
+        <canvas class="slideanim" id="canvas"></canvas>
       </div>
     </div>
     
-    <div class="row" style="background-color:#EEE">
-      <h2>Évolutions</h2>
-      <a href="#" class="container col-sm-4">
-      		<div style="background-color:#888888; border-color:#FFFFFF; border-width:7px; border-style:solid; border-radius:50%"> 
+  <div class="row thumbnails-container">
+      <h1>Evolutions</h1>
+      <div class="container col-sm-4">
+      <a href="#">
+      		<div class="img-container slideanim"> 
             	<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"/>
             </div>
-      		<h4 style="text-align:center">Bulbizarre #001</h4>
+      		<h4>Bulbizarre #001</h4>
+            
+      </a>
             <div class="flex-container">
             	<div class="flex-item type plante">Plante</div>
             	<div class="flex-item type poison">Poison</div>
             </div>
-      </a>
+      </div>
       
       <a href="#" class="container col-sm-4">
-      		<div style="background-color:#888888; border-color:#FFFFFF; border-width:7px; border-style:solid; border-radius:50%"> 
+      		<div class="img-container slideanim"> 
             	<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png"/>
             </div>
-            <h4 style="text-align:center">Herbizarre #002</h4>
+            <h4>Herbizarre #002</h4>
             <div class="flex-container">
             	<div class="flex-item type plante">Plante</div>
             	<div class="flex-item type poison" >Poison</div>
@@ -120,29 +126,15 @@
       </a>
       
       <a href="#" class="container col-sm-4">
-      		<div style="background-color:#888888; border-color:#FFFFFF; border-width:7px; border-style:solid; border-radius:50%"> 
+      		<div class="img-container slideanim"> 
             	<img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png"/>
             </div>
-        	<h4 style="text-align:center">Florizarre #003</h4>
+        	<h4>Florizarre #003</h4>
             <div class="flex-container">
             	<div class="flex-item type plante" >Plante</div>
             </div>
       </a>
       
-    </div>
-  </div>
-</div>
-<h1> <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  cmcmmcmc <br>
-  <br>
-  <br>
-  <br>
-  <br>
-</h1>
 </body>
 <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
 <script src="js/bootstrap.js"></script>
