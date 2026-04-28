@@ -25,9 +25,35 @@
 	</div>
 	<div>
 		<!--Ajout de la musique de générique pour que l'utilisateur retrouve l'ambiance des dessins animés-->
-		<audio class="display-audio" controls autoplay loop >
+		<audio id="theme-audio" class="display-audio" controls autoplay loop preload="auto">
 			<source src="data/le_meilleur_dresseur.mp3" type="audio/mp3">
 		</audio>
 	</div>
+
+	<script>
+		(function () {
+			var audio = document.getElementById('theme-audio');
+			if (!audio) return;
+
+			function tryPlay() {
+				var promise = audio.play();
+				if (promise && typeof promise.catch === 'function') {
+					promise.catch(function () {
+						// L'autoplay peut être bloqué tant qu'il n'y a pas d'interaction utilisateur.
+					});
+				}
+			}
+
+			tryPlay();
+
+			function playOnFirstInteraction() {
+				tryPlay();
+			}
+
+			document.addEventListener('click', playOnFirstInteraction, { once: true });
+			document.addEventListener('touchstart', playOnFirstInteraction, { once: true });
+			document.addEventListener('keydown', playOnFirstInteraction, { once: true });
+		})();
+	</script>
 </body>
 </html>
