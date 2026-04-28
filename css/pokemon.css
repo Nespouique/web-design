@@ -39,6 +39,29 @@
 	display: none;
 }
 
+.theme-button{
+	display: inline-block;
+	margin-top: 1.2em;
+	padding: 0.7em 1.4em;
+	background-color: #4d4e49;
+	color: #FFFFFF;
+	border: 0;
+	border-radius: 999px;
+	font-family: Roboto;
+	font-size: 1.5vw;
+	cursor: pointer;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.theme-button:hover{
+	background-color: #3b3c38;
+}
+
+.theme-button:focus{
+	outline: none;
+}
+
+
 
 /*---------------STYLE NAVBAR---------------*/
 .form-group .form-control{
@@ -562,3 +585,11 @@ display: none;
 	height: 2vw;
 }
 
+
+@media only screen and (max-width: 768px) {
+	.theme-button { font-size: 4.2vw; }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+	.theme-button { font-size: 2.4vw; }
+}
