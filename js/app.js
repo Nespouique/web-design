@@ -417,7 +417,7 @@ app.config(
 								 il aurait fallu metre ce nombre en variable pour pouvoir le changer plus facilement*/
 								var i = parseInt($routeParams.msg);
 								if(i<=0 || i>151){
-									return "/error 404";
+									return "/error404";
 								}
 							}
 						})

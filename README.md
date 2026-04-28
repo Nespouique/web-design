@@ -4,52 +4,54 @@ Projet de web design réalisé par **Richard Dartus**, **Elliot Hallais** et **E
 
 Il s'agit d'une application web front-end autour d'un **Pokédex de la 1re génération** (151 Pokémon), construite en HTML/CSS/JavaScript avec **AngularJS**.
 
-![Aperçu du projet](img/Pokedex.PNG)
+<p align="center">
+  <img src="img/Pokedex.PNG" alt="Aperçu du projet Pokédex Kanto" width="700">
+</p>
 
-## Aperçu
+## 🎯 Aperçu
 
 Le projet propose :
 
-- une **page d'accueil** avec ambiance sonore
-- une **liste de Pokémon** avec chargement progressif
-- une **recherche** sur le nom, la description et les types
-- un **tri avancé** (numéro, taille, poids, ordre alphabétique)
-- une **fiche détaillée** par Pokémon
-- un **comparateur** de statistiques avec graphique radar
-- une page **À propos** présentant le projet et l'équipe
-- une page **404** personnalisée
+- Une **page d'accueil** avec ambiance sonore.
+- Une **liste de Pokémon** avec chargement progressif.
+- Une **recherche** sur le nom, la description et les types.
+- Un **tri avancé** (numéro, taille, poids, ordre alphabétique).
+- Une **fiche détaillée** par Pokémon.
+- Un **comparateur** de statistiques avec graphique radar.
+- Une page **À propos** présentant le projet et l'équipe.
+- Une page **404** personnalisée.
 
 Les données sont chargées depuis un JSON local en français (`data/pokAPI.json`).
 
-## Fonctionnalités principales
+## ✨ Fonctionnalités principales
 
-### Liste des Pokémon
-- affichage responsive des 151 Pokémon de Kanto
-- infinite scroll pour limiter le chargement initial
-- recherche textuelle
-- tri croissant/décroissant selon plusieurs critères
-- navigation vers la fiche détaillée
+### 📚 Liste des Pokémon
+- Affichage responsive des 151 Pokémon de Kanto.
+- Infinite scroll pour limiter le chargement initial.
+- Recherche textuelle.
+- Tri croissant/décroissant selon plusieurs critères.
+- Navigation vers la fiche détaillée.
 
-### Fiche Pokémon
-- image, types, taille, poids et description
-- graphique radar des statistiques de base via Chart.js
-- navigation vers le Pokémon précédent/suivant
-- affichage des évolutions
-- carte des zones de localisation
-- section de commentaires
-- avis "expert" personnalisé pour certains Pokémon
+### 🔍 Fiche Pokémon
+- Image, types, taille, poids et description.
+- Graphique radar des statistiques de base via Chart.js.
+- Navigation vers le Pokémon précédent/suivant.
+- Affichage des évolutions.
+- Carte des zones de localisation.
+- Section de commentaires.
+- Avis "expert" personnalisé pour certains Pokémon.
 
-### Comparateur
-- sélection de deux Pokémon
-- affichage côte à côte
-- comparaison sur un même graphique radar
+### ⚔️ Comparateur
+- Sélection de deux Pokémon.
+- Affichage côte à côte.
+- Comparaison sur un même graphique radar.
 
-### À propos
-- présentation du contexte du projet
-- présentation de l'équipe
-- effets visuels et parallaxe
+### 👥 À propos
+- Présentation du contexte du projet.
+- Présentation de l'équipe.
+- Effets visuels et parallaxe.
 
-## Stack technique
+## 🛠️ Stack technique
 
 - **AngularJS 1.x**
 - **Angular Route**
@@ -59,21 +61,21 @@ Les données sont chargées depuis un JSON local en français (`data/pokAPI.json
 - **Chart.js**
 - **jQuery**
 
-## Structure du projet
+## 📁 Structure du projet
 
 ```text
 .
-├── index.html              # page d'accueil
-├── pokedex.html            # application principale AngularJS
-├── partials/               # vues (liste, fiche, comparateur, etc.)
-├── js/                     # logique AngularJS et scripts utilitaires
-├── css/                    # styles du projet
-├── data/                   # données JSON, audio, cartes
-├── img/                    # visuels Pokémon et assets
-└── Chart.js-2.0-dev/       # librairie Chart.js embarquée
+├── index.html              # Page d'accueil
+├── pokedex.html            # Application principale AngularJS
+├── partials/               # Vues (liste, fiche, comparateur, etc.)
+├── js/                     # Logique AngularJS et scripts utilitaires
+├── css/                    # Styles du projet
+├── data/                   # Données JSON, audio, cartes
+├── img/                    # Visuels Pokémon et assets
+└── Chart.js-2.0-dev/       # Librairie Chart.js embarquée
 ```
 
-## Lancer le projet
+## 🚀 Lancer le projet
 
 Projet statique : pas de build nécessaire.
 
@@ -83,7 +85,7 @@ Ouvrir `index.html` dans un navigateur, puis entrer dans le Pokédex.
 ### Option recommandée
 Servir le dossier avec un petit serveur local pour éviter les soucis de chargement de fichiers selon le navigateur.
 
-Exemples :
+Exemple :
 
 ```bash
 python3 -m http.server 8000
@@ -92,20 +94,20 @@ python3 -m http.server 8000
 Puis ouvrir :
 
 - `http://localhost:8000/index.html`
-- ou directement `http://localhost:8000/pokedex.html#/liste`
+- `http://localhost:8000/pokedex.html#/liste`
 
-## Données
+## 🧬 Données
 
-- **151 Pokémon** de la région de **Kanto**
-- données locales stockées dans `data/pokAPI.json`
-- commentaires stockés dans `data/Comment.json`
+- **151 Pokémon** de la région de **Kanto**.
+- Données locales stockées dans `data/pokAPI.json`.
+- Commentaires stockés dans `data/comment.json`.
 
-## Limites connues
+## ⚠️ Limites connues
 
-- l'envoi de commentaires côté front existe, mais la **sauvegarde persistante** ne fonctionne pas réellement sur un hébergement statique
-- le projet repose sur une stack front-end ancienne (**AngularJS 1.x**)
-- certains comportements ont été pensés pour les navigateurs et contraintes de l'époque du projet
+- L'envoi de commentaires côté front existe, mais la **sauvegarde persistante** ne fonctionne pas réellement sur un hébergement statique.
+- Le projet repose sur une stack front-end ancienne (**AngularJS 1.x**).
+- Certains comportements ont été pensés pour les navigateurs et contraintes de l'époque du projet.
 
-## Contexte
+## 🗂️ Contexte
 
 Ce dépôt archive un projet étudiant orienté **web design**, **responsive design** et **mise en pratique d'AngularJS** autour d'un thème Pokémon.
