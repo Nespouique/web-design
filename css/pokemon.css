@@ -50,7 +50,7 @@
 	color: #FFFFFF;
 	border: 0;
 	font-family: Roboto;
-	font-size: 2vw;
+	font-size: 1.6vw;
 	cursor: pointer;
 }
 
@@ -595,9 +595,9 @@ display: none;
 
 
 @media only screen and (max-width: 768px) {
-	.theme-button { font-size: 4vw; }
+	.theme-button { font-size: 3.4vw; }
 }
 
 @media (min-width: 769px) and (max-width: 992px) {
-	.theme-button { font-size: 2.7vw; }
+	.theme-button { font-size: 2.2vw; }
 }
