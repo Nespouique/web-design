@@ -479,7 +479,7 @@
 	{
 		"id": "025",
 		"nom": "Pikachu",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "",
 		"zone": [2, 10],
 		"taille":0.4,
@@ -497,7 +497,7 @@
 	{
 		"id": "026",
 		"nom": "Raichu",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "",
 		"zone": [0],
 		"taille":0.8,
@@ -1502,7 +1502,7 @@
 	{
 		"id": "081",
 		"nom": "Magneti",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "Acier",
 		"zone": [10],
 		"taille":0.3,
@@ -1520,7 +1520,7 @@
 	{
 		"id": "082",
 		"nom": "Magneton",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "Acier",
 		"zone": [10, 24],
 		"taille":1.0,
@@ -1864,7 +1864,7 @@
 	{
 		"id": "100",
 		"nom": "Voltorbe",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "",
 		"zone": [10],
 		"taille":0.5,
@@ -1882,7 +1882,7 @@
 	{
 		"id": "101",
 		"nom": "Electrode",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "",
 		"zone": [24],
 		"taille":1.2,
@@ -2314,7 +2314,7 @@
 	{
 		"id": "125",
 		"nom": "Elektek",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "",
 		"zone": [0],
 		"taille":1.1,
@@ -2499,7 +2499,7 @@
 	{
 		"id": "135",
 		"nom": "Voltali",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "",
 		"zone": [0],
 		"taille":0.8,
@@ -2689,7 +2689,7 @@
 	{
 		"id": "145",
 		"nom": "Electhor",
-		"type1": "Electrick",
+		"type1": "Electrique",
 		"type2": "Vol",
 		"zone": [0],
 		"taille":1.6,
